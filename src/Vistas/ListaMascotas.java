@@ -28,12 +28,12 @@ public class ListaMascotas extends javax.swing.JFrame {
           // Columnas de la tabla
         String[] columnas = {"ID", "Nombre", "Edad", "Especie", "Peso", "Raza", "Género", "Color", "Esterilizado", "Observaciones"};
          modeloTabla = new DefaultTableModel(columnas, 0); // Inicializar modeloTabla
-        Mascotas = new JTable(modeloTabla);
+      
         initComponents();
         cargarDatos();
     }
     private void cargarDatos() {
-    Mascotas.setModel(modeloTabla);
+  jTable1.setModel(modeloTabla);
         modeloTabla.setRowCount(0); // Limpiar la tabla antes de cargar datos
         List<Mascotas> mascotas = MascotasController.listarMascotas(); // Llamar al método del controlador
 

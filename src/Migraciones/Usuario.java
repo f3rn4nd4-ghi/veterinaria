@@ -4,8 +4,11 @@
  */
 package Migraciones;
 import conexion.Conexion;
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+
 import java.util.Random;
+
 /**
  *
  * @author FERNANDA
